@@ -13,6 +13,7 @@ git status - view current branch
 touch file - create a file
 ls - view folder contents
 git add description.txt - add a file to repository
+git add -A - add all files to git
 git commit description.txt -m "Commited description.txt"
 gitk - visual representation of git commits
 git push origin master - pushes current branch into the remote master
@@ -35,9 +36,12 @@ git reset --hard d8578edf8458ce06fbc5bb76a58c5ca4a58c5ca4 - reset to a commit
 git reset --soft d8578edf8458ce06fbc5bb76a58c5ca4a58c5ca4 same as previous, but files on disk are unchanged
 git mergetool - open a tool for conflict resolution
 git clean -f - remove untracked file
-
 git status - current status
 git fetch origin - download all branches from origin, but do not merge them into local repository
 git fetch origin master - download master branch from origin, and do not merge into a local repository
-
-
+git --version
+git config --global user.name "Vitalii"
+git config --global user.email "vitalii@myemail.com"
+git help config - read info about config
+rm -rf .git - stop git tracking
+touch .gitignore - add gitignore file. It is a test file in which we add file that will be ignored
