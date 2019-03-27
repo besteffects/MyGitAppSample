@@ -6,9 +6,17 @@ git init - create repository locally
 git remote add origin https://github.com/besteffects/MyGitAppSample.git
 git pull - download data from repository
 git branch - view all local branches
+git branch -a - view local/remote branches
 git pull origin master - download data from master into current branch. If current local branch doesn't exist, then
 it will be created and called master
 git status - view current branch
 touch file - create a file
 ls - view folder contents
 git add description.txt
+git commit description.txt -m "Commited description.txt"
+gitk - visual representation of git commits
+git push origin master - pushes current branch into the remote master
+(origin is an alias of a remote repository url)
+git checkout -b lesson2 - create a new local branch based on a current branch
+git push origin lesson2 - push a new branch (or update) into remote repository
+git checkout master - switch to master branch
