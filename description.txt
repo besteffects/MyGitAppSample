@@ -3,7 +3,7 @@ rm Project
 rm -rf Project
 cd Project/
 git init - create repository locally
-git remote add origin https://github.com/besteffects/MyGitAppSample.git
+git remote add origin https://github.com/besteffects/diosoftCourses-Test-automation.git
 git pull - download data from repository
 git branch - view all local branches
 git branch -a - view local/remote branches 
@@ -24,7 +24,7 @@ git push origin - merge ALL branches from local machine to remote repository
 git checkout master - switch to master branch
 git checkout -b some_branch origin/some_branch - start to work with an existing branch
 https://eax.me/git-commands/
-git clone git@bitbucket.org:afiskon/hs-textgen.git - clone repository from remote machine
+git clone git@bitbucket.org:afiskon/hs-textgen.git - clone repository from remote machine to local machine
 git rm text.txt - remove a file
 git branch -d some_branch - remove a branch after merge
 git branch -D some_branch - remove a branch
@@ -45,3 +45,22 @@ git config --global user.email "vitalii@myemail.com"
 git help config - read info about config
 rm -rf .git - stop git tracking
 touch .gitignore - add gitignore file. It is a test file in which we add file that will be ignored
+git reset calc.py - remove a file from staging
+git diff - shows the changes in the code
+Ability to work in team and to implement procedures by myself
+
+To merge hotfix into master:
+Check if your local repository is up to date with the latest changes from your remote server: 
+git fetch
+Once the fetch is completed: git checkout master.
+Ensure the master branch has the latest updates by executing: git pull.
+Checkout to the branch that should receive the changes, in our case that is master.
+git checkout master
+
+git merge hotfix
+
+git commit --amend - change commit message.
+1. Press "i" to edit.
+2. Press "Esc" to stop editing.
+3. :wq - save changes
+4. :q! - reject changes.5. git commit --amend - change commit message.
