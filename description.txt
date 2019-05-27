@@ -1,4 +1,4 @@
-mkdir Git Project
+gitmkdir Git Project
 rm Project
 rm -rf Project
 cd Project/
@@ -64,3 +64,7 @@ git commit --amend - change commit message.
 2. Press "Esc" to stop editing.
 3. :wq - save changes
 4. :q! - reject changes.5. git commit --amend - change commit message.
+
+Create a release:
+git tag -a v1.1 -m "release 1.1"
+git push origin v1.1
