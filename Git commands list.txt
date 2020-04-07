@@ -47,7 +47,8 @@ rm -rf .git - stop git tracking
 touch .gitignore - add gitignore file. It is a test file in which we add file that will be ignored
 git reset calc.py - remove a file from staging
 git diff - shows the changes in the code
-Ability to work in team and to implement procedures by myself
+
+git reset --hard origin/master : If your local changes are bad then just remove them or reset your local master to the state on remote 
 
 To merge hotfix into master:
 Check if your local repository is up to date with the latest changes from your remote server: 
