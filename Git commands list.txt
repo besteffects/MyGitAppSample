@@ -49,7 +49,7 @@ git reset calc.py - remove a file from staging
 git diff - shows the changes in the code
 
 git reset --hard origin/master : If your local changes are bad then just remove them or reset your local master to the state on remote 
-
+Branching: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 To merge hotfix into master:
 Check if your local repository is up to date with the latest changes from your remote server: 
 git fetch
