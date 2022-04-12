@@ -69,3 +69,9 @@ git commit --amend - change commit message.
 Create a release:
 git tag -a v1.1 -m "release 1.1"
 git push origin v1.1
+
+How to merge after black (python formatter) was applied
+git checkout my_branch
+black tests/myfolder  # on applied black formatting on my local folder in my local branch
+git checkout master  # switched to master locally
+git checkout --patch my_branch tests/myfolder/ # instead of git merge, Answer y to all questions and commit
